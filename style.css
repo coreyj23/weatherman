@@ -1,0 +1,197 @@
+
+body{
+  position:relative;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );
+}
+
+h1{
+  font-family: 'Philosopher', sans-serif;
+  color: white;
+}
+
+h2, h3{
+  font-family: 'sans-serif';
+  color: white;
+}
+
+
+/*                                                                  Nav Start */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 40px;
+  position: relative;
+}
+
+/* Sun png with animation */
+header img:nth-child(1){
+  height: 255px;
+  position: absolute;
+  top: -75px;
+  left: -75px;
+  animation: grow 5s infinite ease-out;
+}
+
+@keyframes grow {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.07);}
+  100% {transform: scale(1);}
+}
+
+/* Website Logo */
+header img:nth-child(2){
+  z-index: 2;
+  margin: auto 0 auto 65px;
+}
+
+/* Cloud png */
+header img:nth-child(3){
+  z-index: -1;
+  position: absolute;
+  margin: 55px 0 auto 5px;
+}
+
+/* User Input */
+header input{
+  margin: auto 65px 0;
+  min-width: 350px;
+  padding-left: 20px;
+  height: 40px;
+  border: 1px solid #0093E9;
+  border-radius: 25px;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 1.1rem;
+  font-family: 'Philosopher', sans-serif;
+}
+
+header input::placeholder{
+  color: white;
+  font-size: 1.1rem;
+}
+
+/*                                                                    Nav End */
+
+
+/*                                                              Section Start */
+
+section{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(90deg, rgba(115,147,179,1) 40%, rgba(159,191,223,0.35) 100%);
+}
+
+/* Location Container */
+#location-Details{
+  margin-left: 65px;
+  display: flex;
+  position: absolute;
+  top: 0;
+}
+
+/* City Name */
+#cityName h2{
+  width: fit-content;
+  font-size: 2.1rem;
+  visibility: inherit;
+}
+
+/* State Name */
+#stateName h2{
+  width: fit-content;
+  font-size: 2.1rem;
+}
+
+/* Country Name */
+#countryName h2{
+  margin-left: 10px;
+  width: fit-content;
+  font-size: 2.1rem;
+}
+
+/* Horizontal Rule */
+#locationHR hr{
+  width: 43%;
+  position: absolute;
+  top: 75px;
+  left: 28px;
+  height: 1px;
+  background-color: #61baff;
+  border: none;
+}
+
+/* Temperature Container */
+#temperature-misc-Details{
+  margin-left: 65px;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  width: fit-content;
+}
+
+/* Current Day */
+#currentDay{
+  width: 300px;
+  margin-left: 5px;
+  display: flex;
+  position: absolute;
+  top: 50px;
+  font-size: 2.1rem;
+}
+
+/* Temperature Degrees */
+#tempDegrees h3{
+  width: fit-content;
+  font-size: 5.5rem;
+  position: absolute;
+  top: 60px;
+  color: #61baff;
+}
+
+/* Current Condition */
+#currentCondition h3{
+  width: 250px;
+  position: absolute;
+  top: 170px;
+  left: 130px;
+  font-size: 1.9rem;
+  color: #61baff;
+}
+
+/* Current Humidity */
+#currentHumidity h3{
+  color: white;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 245px;
+  width: 170px;
+}
+
+/* Low Temperature */
+#lowTemp h3{
+  color: white;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 290px;
+  width: 170px;
+}
+
+/* High Temperature */
+#highTemp h3{
+  color: white;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 290px;
+  left: 100px;
+  width: 170px;
+}
+/*                                                                Section End */
